@@ -43,6 +43,6 @@ button {
   cursor: pointer;
 }
 
-#rubyTrack, #cssTrack, #cTrack, #error-result {
+#ruby-track, #css-track, #c-track, #error-result {
   display: none;
 }
