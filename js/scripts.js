@@ -10,6 +10,7 @@ $("#formSurvey").submit(function(event){
   $("#ruby-track").hide();
   $("#c-track").hide();
   $("#css-track").hide();
+  $("#platypus").hide();
 
   var userFirstName = $("input#first-name").val();
   var userLastName = $("input#last-name").val();
@@ -27,34 +28,43 @@ $("#formSurvey").submit(function(event){
       firstInput === 1 && thirdInput === 1 && fourthInput === 1 ||
       secondInput === 1 && thirdInput === 1 && fourthInput === 1) {
     $("#ruby-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 2 && secondInput === 2 && thirdInput === 2 ||
             firstInput === 2 && secondInput === 2 && fourthInput === 2 ||
             firstInput === 2 && thirdInput === 2 && fourthInput === 2 ||
             secondInput === 2 && thirdInput === 2 && fourthInput === 2) {
     $("#c-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 3 && secondInput === 3 && thirdInput === 3 ||
             firstInput === 3 && secondInput === 3 && fourthInput === 3 ||
             firstInput === 3 && thirdInput === 3 && fourthInput === 3 ||
             secondInput === 3 && thirdInput === 3 && fourthInput === 3) {
     $("#css-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 1 && secondInput === 1 ||
             firstInput === 1 && thirdInput === 1 ||
             firstInput === 1 && fourthInput === 1) {
     $("#ruby-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 2 && secondInput === 2 ||
             firstInput === 2 && thirdInput === 2 ||
             firstInput === 2 && fourthInput === 2) {
     $("#c-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 3 && secondInput === 3 ||
             firstInput === 3 && thirdInput === 3 ||
             firstInput === 3 && fourthInput === 3) {
     $("#css-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 1) {
     $("#ruby-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 2) {
     $("#c-track").fadeIn();
+    $("#platypus").slideDown();
   } else if (firstInput === 3) {
     $("#css-track").fadeIn();
+    $("#platypus").slideDown();
   } else {
     $("#error-result").show();
   }
@@ -69,6 +79,7 @@ $(".close-results").click(function() {
   $("#c-track").fadeOut();
   $("#css-track").fadeOut();
   $("#error-result").hide();
+  $("#platypus").hide();
 });
 
 });

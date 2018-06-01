@@ -12,8 +12,6 @@ h1 {
   text-align: center;
 }
 
-
-
 li {
   margin-bottom: 10px;
 }
@@ -67,4 +65,10 @@ button {
 
 #ruby-track, #css-track, #c-track, #error-result {
   display: none;
+}
+
+#platypus {
+  display: none;
+  float: right;
+  height: 100px;
 }
