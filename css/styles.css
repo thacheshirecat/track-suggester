@@ -1,11 +1,15 @@
-#rubyTrack, #cssTrack, #cTrack {
-  display: none;
-}
-
 h1 {
   text-align: center;
 }
 
+button {
+  margin-top: 25px;
+}
+
 .form-well {
   background-color: lightblue;
+}
+
+#rubyTrack, #cssTrack, #cTrack {
+  display: none;
 }
