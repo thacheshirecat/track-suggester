@@ -1,3 +1,6 @@
+/**********************************************/
+/* Styles ordered from less to more specific */
+/********************************************/
 body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
@@ -7,12 +10,6 @@ body {
 
 h1 {
   text-align: center;
-}
-
-.first-question, .second-question, .third-question, .fourth-question, .fifth-question {
-  background-color:  #dedede;
-  border-bottom: 2px solid black;
-  border-radius: 10px;
 }
 
 button {
@@ -26,6 +23,12 @@ button {
 
 .form-well {
   background-color:   #b4a9cf;
+}
+
+.first-question, .second-question, .third-question, .fourth-question, .fifth-question {
+  background-color:  #dedede;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
 }
 
 .close-results {

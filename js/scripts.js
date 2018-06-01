@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //
-// Back end logic for sorting out survey results
+// Back end logic for determining survey results
 //
 
 $("#formSurvey").submit(function(event){
@@ -21,11 +21,11 @@ $("#formSurvey").submit(function(event){
   $(".result-full-name").text(userFirstName + " " + userLastName);
 
   if (firstInput === 1) {
-    $("#rubyTrack").show();
+    $("#rubyTrack").fadeIn();
   } else if (firstInput === 2) {
-    $("#cTrack").show();
+    $("#cTrack").fadeIn();
   } else {
-    $("#cssTrack").show();
+    $("#cssTrack").fadeIn();
   }
 })
 
@@ -35,9 +35,9 @@ $("#formSurvey").submit(function(event){
 //
 
 $(".close-results").click(function() {
-  $("#rubyTrack").hide();
-  $("#cTrack").hide();
-  $("#cssTrack").hide();
+  $("#rubyTrack").fadeOut();
+  $("#cTrack").fadeOut();
+  $("#cssTrack").fadeOut();
 });
 
 });
