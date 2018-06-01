@@ -2,8 +2,15 @@ h1 {
   text-align: center;
 }
 
+.first-question, .second-question, .third-question, .fourth-question, .fifth-question {
+  background-color: white;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+}
+
 button {
   margin-top: 25px;
+  text-align: center;
 }
 
 .form-well {
