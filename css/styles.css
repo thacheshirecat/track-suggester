@@ -5,3 +5,7 @@
 h1 {
   text-align: center;
 }
+
+.form-well {
+  background-color: lightblue;
+}
