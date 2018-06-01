@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+//
+// Back end logic for sorting out survey results
+//
+
 $("#formSurvey").submit(function(event){
   event.preventDefault();
   $("#rubyTrack").hide();
@@ -26,5 +30,14 @@ $("#formSurvey").submit(function(event){
 })
 
 
+//
+// Front end logic for closing the results once opened
+//
+
+$(".close-results").click(function() {
+  $("#rubyTrack").hide();
+  $("#cTrack").hide();
+  $("#cssTrack").hide();
+});
 
 });
