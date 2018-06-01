@@ -12,6 +12,12 @@ h1 {
   text-align: center;
 }
 
+
+
+li {
+  margin-bottom: 10px;
+}
+
 button {
   margin-top: 25px;
   text-align: center;
@@ -29,6 +35,22 @@ button {
   background-color:  #dedede;
   border-bottom: 2px solid black;
   border-radius: 10px;
+}
+
+.more-info {
+  color: white;
+  font-weight: bold;
+}
+
+.more-info:hover {
+  color: lightgray;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.close-results-p {
+  margin-top: 25px;
 }
 
 .close-results {

@@ -20,6 +20,7 @@ $("#formSurvey").submit(function(event){
   var fifthInput = parseInt($("input:radio[name=fifth-question]:checked").val());
 
   $(".result-full-name").text(userFirstName + " " + userLastName);
+  $(".result-first-name").text(userFirstName);
 
   if (firstInput === 1 && secondInput === 1 && thirdInput === 1 ||
       firstInput === 1 && secondInput === 1 && fourthInput === 1 ||
@@ -57,35 +58,7 @@ $("#formSurvey").submit(function(event){
   } else {
     $("#error-result").show();
   }
-
 });
-
-
-// else if (firstInput === 1 && secondInput === 1 ||
-//           firstInput === 1 && thirdInput === 1 ||
-//           firstInput === 1 && fourthInput === 1 ||
-//           secondInput === 1 && thirdInput === 1 ||
-//           secondInput === 1 && fourthInput === 1 ||
-//           thirdInput === 1 && fourthInput === 1) {
-//   $("#ruby-track").fadeIn();
-// } else if (firstInput === 2 && secondInput === 2 ||
-//           firstInput === 2 && thirdInput === 2 ||
-//           firstInput === 2 && fourthInput === 2 ||
-//           secondInput === 2 && thirdInput === 2 ||
-//           secondInput === 2 && fourthInput === 2 ||
-//           thirdInput === 2 && fourthInput === 2) {
-//   $("#css-track").fadeIn();
-// } else if (firstInput === 3 && secondInput === 3 ||
-//           firstInput === 3 && thirdInput === 3 ||
-//           firstInput === 3 && fourthInput === 3 ||
-//           secondInput === 3 && thirdInput === 3 ||
-//           secondInput === 3 && fourthInput === 3 ||
-//           thirdInput === 3 && fourthInput === 3) {
-//   $("#css-track").fadeIn();
-// }
-
-
-
 
 //
 // Front end logic for closing the results once opened
