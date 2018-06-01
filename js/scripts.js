@@ -14,6 +14,8 @@ $("#formSurvey").submit(function(event){
   var fourthInput = parseInt($("input:radio[name=fourth-question]:checked").val());
   var fifthInput = parseInt($("input:radio[name=fifth-question]:checked").val());
 
+  $(".result-full-name").text(userFirstName + " " + userLastName);
+
   if (firstInput === 1) {
     $("#rubyTrack").show();
   } else if (firstInput === 2) {
